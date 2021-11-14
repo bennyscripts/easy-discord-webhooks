@@ -31,7 +31,7 @@ setup(
   author = 'Ben Tettmar',
   author_email = 'hello@benny.fun',
   url = 'https://github.com/bentettmar/easy-discord-webhooks',
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',
+  download_url = 'https://github.com/bentettmar/easy-discord-webhooks/archive/refs/tags/1.0.0.tar.gz',
   keywords = ['discord', 'webhook', 'easy', "discord webhook", "webhook discord", "easy discord webhook", "discord webhook easy"],
   install_requires=["requests"],
   classifiers=[
