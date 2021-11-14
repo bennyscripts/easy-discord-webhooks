@@ -49,4 +49,7 @@ class Webhook:
 
     def send(self, message="", embed={}):
         url = f"https://discord.com/api/webhooks/{self.id}/{self.token}"
-        requests.post(url, headers={"Content-Type": "application/json"}, data=json.dumps({"content": message, "embeds": [dict(embed)]}))
+        if embed == {}:
+            requests.post(url, headers={"Content-Type": "application/json"}, data=json.dumps({"content": message}))
+        else:
+            requests.post(url, headers={"Content-Type": "application/json"}, data=json.dumps({"content": message, "embeds": [dict(embed)]}))
